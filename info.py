@@ -45,6 +45,12 @@ DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://iakshaytayade:iakshayt
 DATABASE_NAME = environ.get('DATABASE_NAME', "iakshaytayade")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
+# Shortlink Info
+SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False)) # Set True Or False
+SHORTLINK_URL = environ.get('SHORTLINK_URL', '0')
+SHORTLINK_API = environ.get('SHORTLINK_API', '0')
+TUTORIAL = environ.get('TUTORIAL', '') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
+
 # Others
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/')
